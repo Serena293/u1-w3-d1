@@ -260,8 +260,10 @@ console.log(
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
 */
 
-console.log(movies.find((el)=>{ el.imdbID === 'tt0057261'}))
+console.log(movies.find((el)=>{ return el.imdbID === 'tt0057261'}))
 
 /* ESERCIZIO 15 (findIndex)
   Scrivi una funzione per ottenere dall'array fornito l'indice del primo film uscito nell'anno fornito come parametro.
 */
+
+console.log(movies.findIndex((el)=> {return el.Year == 2005}))
